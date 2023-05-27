@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bicicleta.css" />
+    <title>Bicicletas</title>
+</head>
+
+<body id="todo">
+    <div class="contenedor-botonera-bicicleta">
+        <div><button class="boton"><a href="index.html">Regresar al menú</a></button>
+            <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+            <button class="boton"><a href="index2.html">Un saludo</a></button>
+            <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+            <!-- <button class="boton"><a href="Formulario.html">El trabajo</a></button> -->
+
+            <p id="nombreUsuario"></p>
+
+        </div>
+    </div>
+    <div id="banner">
+        <a href="./bicicleta1.html">Mountain Bike</a>
+        <a href="./bicicleta2.html">Road Bike</a>
+        <a href="./bicicleta3.html">eBike</a>
+        <a href="./bicicleta4.html">Urban</a>
+    </div>
+    <div class="cuadrado">
+
+        <p>Las <b>e-bikes</b>, o <b>bicicletas eléctricas</b>, son bicicletas equipadas con un sistema de propulsión eléctrica que
+            proporciona asistencia al pedaleo. Estas bicicletas combinan la energía humana con la energía eléctrica
+            para
+            facilitar el pedaleo y permitir a los ciclistas recorrer distancias más largas y superar terrenos más
+            exigentes con menor esfuerzo.<br>
+
+            Las e-bikes suelen tener las siguientes características:<br>
+
+            Las e-bikes están equipadas con un motor eléctrico que puede estar integrado en el buje de la rueda
+            trasera,
+            el buje de la rueda delantera o en el centro de la bicicleta cerca de los pedales. El motor proporciona
+            asistencia al pedaleo, multiplicando la fuerza ejercida por el ciclista <br>
+
+            Están alimentadas por una batería recargable que suministra energía al motor eléctrico.
+            Las baterías suelen estar montadas en el cuadro de la bicicleta o en el portaequipajes y se pueden
+            recargar
+            mediante una toma de corriente estándar.<br>
+
+            Las e-bikes suelen tener diferentes modos de asistencia que permiten al ciclista ajustar el nivel de
+            ayuda
+            proporcionado por el motor. Estos modos pueden variar desde una asistencia mínima que amplifica
+            ligeramente
+            la potencia del ciclista hasta una asistencia máxima que proporciona un impulso significativo al
+            pedaleo.<br>
+
+            Muchas están equipadas con una pantalla en el manillar que muestra información como la velocidad, la
+            distancia
+            recorrida, el nivel de carga de la batería y el modo de asistencia seleccionado.
+            También suelen tener controles en el manillar que permiten al ciclista ajustar la configuración y
+            cambiar
+            entre los modos de asistencia.<br>
+
+            Las e-bikes han ganado popularidad en los últimos años debido a sus beneficios para la movilidad urbana,
+            el
+            ciclismo recreativo y el turismo. Permiten a los ciclistas recorrer distancias más largas, superar
+            colinas
+            empinadas con facilidad y llegar a su destino de manera más rápida y cómoda. Además, las e-bikes son una
+            opción más sostenible y respetuosa con el medio ambiente en comparación con los vehículos motorizados
+            convencionales.
+        </p>
+        <div class="imagenEBIKE"></div>
+    </div>
+
+    <script src="./bicicletas.js"></script>
+    <script>window.onload = function () {
+            mostrarNombreUsuario();
+            document.getElementById("nombre").addEventListener("input", guardarNombreUsuario);
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            var colorSeleccionado = localStorage.getItem("colorSeleccionado");
+            var tamFuenteSeleccionado = localStorage.getItem("tamFuenteSeleccionado");
+
+            if (colorSeleccionado) {
+                document.documentElement.style.setProperty("--colorNormal", colorSeleccionado);
+            }
+
+            if (tamFuenteSeleccionado) {
+                document.documentElement.style.fontSize = parseFloat(tamFuenteSeleccionado) + "rem";
+            }
+        });
+    </script>
+</body>
+
+</html>

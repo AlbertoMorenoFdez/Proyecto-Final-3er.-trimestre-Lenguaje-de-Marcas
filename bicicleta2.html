@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bicicleta.css" />
+    <title>Bicicletas</title>
+</head>
+
+<body id="todo">
+    <div class="contenedor-botonera-bicicleta">
+        <div><button class="boton"><a href="index.html">Regresar al menú</a></button>
+            <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+            <button class="boton"><a href="index2.html">Un saludo</a></button>
+            <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+            <!-- <button class="boton"><a href="Formulario.html">El trabajo</a></button> -->
+
+            <p id="nombreUsuario"></p>
+
+        </div>
+    </div>
+    <div id="banner">
+        <a href="./bicicleta1.html">Mountain Bike</a>
+        <a href="./bicicleta2.html">Road Bike</a>
+        <a href="./bicicleta3.html">eBike</a>
+        <a href="./bicicleta4.html">Urban</a>
+    </div>
+    <div class="cuadrado">
+
+        <p>Las <b>bicicletas de carretera</b>, también conocidas como <b>bicicletas de ruta</b> o <b>bicicletas de carrera</b>, están
+            diseñadas específicamente para el ciclismo en carreteras pavimentadas. Estas bicicletas se caracterizan
+            por
+            su ligereza, eficiencia y aerodinámica, lo que las convierte en la elección ideal para ciclistas que
+            buscan
+            velocidad y rendimiento en superficies lisas.<br>
+
+            Las bicicletas de carretera suelen tener las siguientes características:<br>
+
+            Los cuadros de las bicicletas de carretera están construidos con materiales como aluminio, carbono o
+            acero
+            de alta calidad para lograr la máxima ligereza y rigidez. Esto ayuda a reducir el peso total
+            de la bicicleta y mejorar la transferencia de energía del ciclista al pedalear.<br>
+
+            Los cuadros y las formas de las bicicletas de carretera están diseñados para minimizar la resistencia al
+            viento
+            y optimizar la aerodinámica. Esto permite que el ciclista pueda alcanzar velocidades más altas con menos
+            esfuerzo.<br>
+
+            Las bicicletas de carretera generalmente tienen un manillar curvado hacia abajo. Esta forma permite al
+            ciclista
+            adoptar diferentes posiciones para maximizar la aerodinámica y la comodidad durante la conducción.<br>
+
+            Las bicicletas de carretera suelen tener neumáticos delgados y lisos, lo que reduce la resistencia a la
+            rodadura
+            y mejora la eficiencia en carreteras pavimentadas. Estos neumáticos proporcionan una menor fricción y
+            permiten
+            una mayor velocidad.<br>
+
+            Suelen estar equipadas con sistemas de transmisión de alta gama que ofrecen una amplia gama de
+            velocidades
+            y cambios suaves. Esto permite al ciclista adaptarse a diferentes pendientes y condiciones de terreno en
+            carretera.<br>
+
+            Pueden tener frenos de llanta tradicionales o frenos de disco. Los frenos de llanta son ligeros y
+            ofrecen
+            una buena potencia de frenado en carreteras secas. Los frenos de disco proporcionan un mayor poder de
+            frenado
+            y un mejor rendimiento en condiciones de humedad o terreno accidentado.<br>
+
+            Las bicicletas de carretera son populares entre los ciclistas que buscan recorrer largas distancias en
+            carreteras pavimentadas, participar en carreras o simplemente disfrutar de paseos rápidos y eficientes.
+            Su
+            diseño y características están optimizados para la velocidad y la eficiencia en superficies planas, lo
+            que
+            las convierte en una opción ideal para el ciclismo en carretera.
+        </p>
+        <div class="imagenROAD"></div>
+    </div>
+
+    <script src="./bicicletas.js"></script>
+    <script>window.onload = function () {
+            mostrarNombreUsuario();
+            document.getElementById("nombre").addEventListener("input", guardarNombreUsuario);
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            var colorSeleccionado = localStorage.getItem("colorSeleccionado");
+            var tamFuenteSeleccionado = localStorage.getItem("tamFuenteSeleccionado");
+
+            if (colorSeleccionado) {
+                document.documentElement.style.setProperty("--colorNormal", colorSeleccionado);
+            }
+
+            if (tamFuenteSeleccionado) {
+                document.documentElement.style.fontSize = parseFloat(tamFuenteSeleccionado) + "rem";
+            }
+        });
+    </script>
+</body>
+
+</html>

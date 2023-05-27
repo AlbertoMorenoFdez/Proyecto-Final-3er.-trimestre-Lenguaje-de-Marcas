@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice trabajos 3T</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+
+<body>
+
+    <h1>MENÚ</h1>
+    <div class="contenedor-botonera">
+        <button class="boton" onclick="mostrarModal()">Más información del trabajo</button>
+        <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+        <button class="boton"><a href="index2.html">Un saludo</a></button>
+        <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+        <button class="boton"><a href="Formulario.html">El trabajo</a></button>
+
+    </div>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <h2>Información del trabajo</h2>
+            <p>Alberto Moreno Fernandez. 1º DAW 2022 - 2023</p>
+            <p>Tema del proyecto final: "La Bicicleta"</p>
+            <br>
+            <p>¿Qué quiero mostrar?</p>
+            <ol>
+                <li>Un menú inicial donde encontraremos un botón que conduce a una ventana modal.</li>
+                <li>Una vista atrás hacia una página XML</li>
+                <li>Los primeros pasos con javascript</li>
+                <li>El juego de 3 en raya</li>
+                <li>El grueso del trabajo, una página html donde podremos encontrar:</li>
+                <ul>
+                    <li>Una página inical de ajustes donde podremos poner poner nuestro nombre,</li>
+                </ul>
+                <ul>elegir el color y el tamaño de la fuente para los textos que se mostrarán, </ul>
+                <ul>al pasar el puntero del ratón por encima de las imágenes, gracias la funcion hover,</ul>
+                <ul>así como navegar en modo noche o día.</ul>
+                <ul>
+                    <li>Una portada con una función redirigir con un onclick sobre cualquier parte de</li>
+                </ul>
+                <ul>de la pantalla</ul>
+                <ul><li>Cuatro páginas enlazadas entre sí mostrando un poco del mundo de la bici y en las que </li>
+                se aplican localStorage y sesionStorage.</ul>
+
+
+            </ol>
+            
+
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

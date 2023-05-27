@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bicicleta.css" />
+    <title>Página de ajustes</title>
+</head>
+
+<body class="formulario" id="todo">
+    <div class="contenedor-botonera">
+        <button class="boton"><a href="index.html">Regresar al menú</a></button>
+        <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+        <button class="boton"><a href="index2.html">Un saludo</a></button>
+        <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+        <!-- <button class="boton"><a href="Formulario.html">El trabajo</a></button> -->
+      </div>
+    <p id="nombreUsuario"></p> 
+    <h1>Página de ajustes</h1>
+    <div class="colores">
+        <p id="esteParrafo">Elige un color para este mini formulario</p>
+        <input type="color" name="colorElegido" />
+    </div>
+    <div class="tamañoFuente">
+        <p id="esteParrafo2">Elige un tamaño para este mini formulario</p>
+        <select name="tamFuente">
+            <option value="0.8">Pequeña</option>
+            <option value="1.0" selected="selected">Mediana</option>
+            <option value="1.4">Grande</option>
+        </select>
+
+    </div>
+    
+    <form>
+        <label for="nombre" style="color: var(--colorNormal);">¿Me dices tu nombre?</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </form>
+
+
+    <div id="zonaModo">
+        <p class="parrafoDiaNoche">¿Quieres navegar en modo dia o en modo noche?</p>
+        <div class="botonesModo">
+            <img id="dia" src="./dia.png" onclick="ponerModoDia()">
+            <img id="noche" src="./noche.png" onclick="ponerModoNoche()">
+        </div>
+    </div>
+   
+    <button type="button" onclick="mostrarNombreUsuario(),aplicarCambios(),alertaNombreUsuario()">Enviar</button>
+    <p id="mensaje"></p>
+    <button type="button" onclick="redirigir()">Continuar navegando</button>
+
+    <script src="bicicletas.js"></script>
+</body>
+
+</html>

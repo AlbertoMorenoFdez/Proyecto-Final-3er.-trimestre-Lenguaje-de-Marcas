@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bicicleta.css" />
+    <title>Bicicletas</title>
+</head>
+
+<body id="todo">
+    <div class="contenedor-botonera-bicicleta">
+        <div><button class="boton"><a href="index.html">Regresar al menú</a></button>
+            <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+            <button class="boton"><a href="index2.html">Un saludo</a></button>
+            <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+            <!-- <button class="boton"><a href="Formulario.html">El trabajo</a></button> -->
+
+            <p id="nombreUsuario"></p>
+
+        </div>
+    </div>
+    <div id="banner">
+        <a href="./bicicleta1.html">Mountain Bike</a>
+        <a href="./bicicleta2.html">Road Bike</a>
+        <a href="./bicicleta3.html">eBike</a>
+        <a href="./bicicleta4.html">Urban</a>
+    </div>
+    <div class="cuadrado">
+
+        <p>Las <b>bicicletas urbanas</b> son bicicletas diseñadas especialmente para su uso en entornos urbanos,
+            ofreciendo comodidad, practicidad y facilidad de transporte.<br>
+
+            Las características comunes de las bicicletas urbanas y plegables son:<br>
+
+            Están diseñadas para ser compactas y fáciles de plegar, lo que permite un
+            almacenamiento y transporte conveniente en espacios reducidos, como apartamentos, oficinas o transporte
+            público. Pueden plegarse rápidamente sin necesidad de herramientas y ocupan poco espacio cuando están
+            plegadas.<br>
+
+            Suelen ser livianas, lo que facilita su transporte y
+            manipulación. Están construidas con materiales como aluminio o aleaciones de acero livianas para reducir el
+            peso total de la bicicleta.<br>
+
+            suelen tener asas de transporte integradas o sistemas de ruedas pequeñas cuando están plegadas. Esto permite
+            llevarlas
+            cómodamente en el transporte público, guardarlas en el maletero de un automóvil o llevarlas a mano cuando
+            sea necesario.<br>
+
+            Tienen un diseño ágil y maniobrable, lo que las hace ideales para la navegación en entornos urbanos
+            congestionados.
+            Su tamaño compacto les permite moverse fácilmente entre el tráfico, sortear obstáculos y estacionar en
+            espacios reducidos.<br>
+
+            Estan equipadas con características prácticas para el uso urbano, como guardabarros que protegen al ciclista
+            de
+            salpicaduras, luces integradas para mejorar la visibilidad y portaequipajes o cestas para transportar carga
+            adicional,
+            como bolsas de compras o una mochila.<br>
+
+            A pesar de su tamaño compacto, las bicicletas urbanas y plegables están diseñadas para brindar
+            comodidad al ciclista. Suelen tener una posición de conducción erguida que reduce la tensión en la espalda y
+            las muñecas, así como asientos acolchados que absorben los impactos del terreno urbano.<br>
+
+            Estas bicicletas son una excelente opción para aquellos que buscan una forma conveniente y eficiente de
+            desplazarse por la ciudad. Permiten combinar el uso de la bicicleta con otros medios de transporte, como
+            trenes o autobuses, y ofrecen flexibilidad para adaptarse a diferentes necesidades y espacios. Son ideales
+            para trayectos urbanos cortos, recorridos diarios al trabajo o simplemente para explorar la ciudad de manera
+            práctica y sostenible.
+        </p>
+        <div class="imagenURBAN"></div>
+    </div>
+
+    <script src="./bicicletas.js"></script>
+    <script>window.onload = function () {
+            mostrarNombreUsuario();
+            document.getElementById("nombre").addEventListener("input", guardarNombreUsuario);
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            var colorSeleccionado = localStorage.getItem("colorSeleccionado");
+            var tamFuenteSeleccionado = localStorage.getItem("tamFuenteSeleccionado");
+
+            if (colorSeleccionado) {
+                document.documentElement.style.setProperty("--colorNormal", colorSeleccionado);
+            }
+
+            if (tamFuenteSeleccionado) {
+                document.documentElement.style.fontSize = parseFloat(tamFuenteSeleccionado) + "rem";
+            }
+        });
+    </script>
+</body>
+
+</html>

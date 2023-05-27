@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bicicleta.css" />
+    <title>Bicicletas</title>
+</head>
+
+<body id="todo">
+    <div class="contenedor-botonera-bicicleta">
+        <div><button class="boton"><a href="index.html">Regresar al menú</a></button>
+            <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+            <button class="boton"><a href="index2.html">Un saludo</a></button>
+            <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+            <!-- <button class="boton"><a href="Formulario.html">El trabajo</a></button> -->
+
+            <p id="nombreUsuario"></p>
+
+        </div>
+    </div>
+    <div id="banner">
+        <a href="./bicicleta1.html">Mountain Bike</a>
+        <a href="./bicicleta2.html">Road Bike</a>
+        <a href="./bicicleta3.html">eBike</a>
+        <a href="./bicicleta4.html">Urban</a>
+    </div>
+
+    <div class="cuadrado">
+
+        <p>Las <b>bicicletas de montaña</b>, también conocidas como <b>MTB (Mountain Bikes)</b>, son bicicletas diseñadas
+            específicamente para el ciclismo fuera de carretera en terrenos accidentados y variados. Estas bicicletas
+            están construidas para resistir el terreno difícil y ofrecer un rendimiento óptimo en condiciones como
+            senderos, caminos de tierra, montañas y bosques.<br>
+
+            Las bicicletas de montaña suelen tener características distintivas que las hacen adecuadas para el terreno
+            agreste. Estas características incluyen:<br>
+
+            Marco resistente: Los cuadros de las bicicletas de montaña están diseñados para soportar golpes y
+            vibraciones, generalmente están hechos de aleaciones de aluminio, acero o fibra de carbono.<br>
+
+            Suspensión: Muchas bicicletas de montaña cuentan con sistemas de suspensión en la horquilla delantera,
+            conocidas como bicicletas de suspensión delantera (hardtail), o en ambas ruedas, conocidas como bicicletas
+            de doble suspensión (full suspension). Estas suspensiones ayudan a absorber impactos y mejorar el control y
+            la comodidad del ciclista en terrenos irregulares.<br>
+
+            Neumáticos anchos y con agarre: Los neumáticos de las bicicletas de montaña son más anchos que los de las
+            bicicletas de carretera, lo que proporciona mayor tracción y estabilidad en terrenos accidentados. Suelen
+            tener dibujos profundos en la banda de rodadura para mejorar el agarre en superficies sueltas o
+            resbaladizas.<br>
+
+            Transmisión versátil: Las bicicletas de montaña suelen tener una amplia gama de velocidades para adaptarse a
+            diferentes pendientes y condiciones de terreno. Pueden tener cambios delanteros y traseros que permiten al
+            ciclista seleccionar la marcha adecuada para ascender colinas empinadas o pedalear a alta velocidad en
+            terrenos planos.<br>
+
+            Frenos de disco: La mayoría de las bicicletas de montaña utilizan frenos de disco hidráulicos o mecánicos,
+            que ofrecen una mayor potencia de frenado y un mejor rendimiento en condiciones de humedad o barro.<br>
+
+            Las bicicletas de montaña son muy populares entre los amantes del ciclismo off-road, ya que permiten
+            explorar la naturaleza, superar obstáculos y disfrutar de la adrenalina de los descensos. Hay diferentes
+            categorías de bicicletas de montaña, como trail, cross country, enduro y downhill, cada una diseñada para
+            diferentes estilos de conducción y terrenos específicos.
+
+        </p>
+
+
+        <div class="imagenMTB"></div>
+    </div>
+
+    <script src="./bicicletas.js"></script>
+    <script>window.onload = function () {
+            mostrarNombreUsuario();
+            document.getElementById("nombre").addEventListener("input", guardarNombreUsuario);
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            var colorSeleccionado = localStorage.getItem("colorSeleccionado");
+            var tamFuenteSeleccionado = localStorage.getItem("tamFuenteSeleccionado");
+
+            if (colorSeleccionado) {
+                document.documentElement.style.setProperty("--colorNormal", colorSeleccionado);
+            }
+
+            if (tamFuenteSeleccionado) {
+                document.documentElement.style.fontSize = parseFloat(tamFuenteSeleccionado) + "rem";
+            }
+        });
+    </script>
+</body>
+
+</html>

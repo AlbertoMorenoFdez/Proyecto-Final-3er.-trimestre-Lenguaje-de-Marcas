@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La bicicleta</title>
+    <link rel="stylesheet" type="text/css" href="./bicicleta.css" />
+</head>
+
+<body class="portada" id="todo" onclick="mostrarModal(event)">
+
+    <div class="contenedor-botonera">
+        <button class="boton"><a href="index.html">Regresar al menú</a></button>
+        <button class="boton"><a href="XMLIframe.html">Un vistazo al XML en un iframe</a></button>
+        <button class="boton"><a href="index2.html">Un saludo</a></button>
+        <button class="boton"><a href="3enRaya Array.html">Un juego</a></button>
+        <!-- <button class="boton"><a href="Formulario.html">El trabajo</a></button> -->
+        <p id="nombreUsuario"></p>
+    </div>
+
+    <h1 class="ml3">
+        La bicicleta
+    </h1>
+    <h2 class="m14">Pincha cualquier parte de la pantalla para leer un breve resumen de las bicicletas.</h2>
+
+    <!-- Ventana modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="cerrarModal()">&times;</span>
+            <p>La historia de la bicicleta se remonta a varios siglos atrás. Aunque los primeros diseños de vehículos de
+                dos ruedas sin pedal aparecieron en China y Europa en los siglos XVIII y XIX, la bicicleta tal como la
+                conocemos hoy en día comenzó a tomar forma a mediados del siglo XIX.<br><br>
+
+                En 1817, Karl Drais, un inventor alemán, creó la "máquina de correr" o "máquina de Drais". Esta fue una
+                especie de bicicleta sin pedales que se impulsaba con los pies del ciclista en el suelo. Aunque no era
+                una bicicleta propiamente dicha, sentó las bases para el desarrollo posterior.<br><br>
+
+                El siguiente avance importante ocurrió en la década de 1860, cuando los pedales fueron agregados a la
+                estructura de la bicicleta. En 1861, el francés Pierre Michaux y su hijo Ernest presentaron la "máquina
+                de pedales", que se considera la primera bicicleta real. Esta innovación permitió un método más
+                eficiente de propulsión y marcó el comienzo de la popularización de la bicicleta.<br><br>
+
+                A medida que avanzaba el siglo XIX, se produjeron numerosas mejoras en el diseño de la bicicleta. En la
+                década de 1870, se introdujeron las ruedas con radios y los neumáticos de caucho, lo que mejoró la
+                comodidad y la tracción. Además, se desarrollaron diferentes tipos de bicicletas, como la bicicleta de
+                alta rueda, conocida como "penny-farthing", que presentaba una rueda delantera mucho más grande que la
+                trasera.<br><br>
+
+                A finales del siglo XIX, la invención de la cadena y los engranajes permitió la creación de la bicicleta
+                de seguridad, también conocida como bicicleta de rueda igual. Este diseño tenía dos ruedas de tamaño
+                similar y una cadena que conectaba los pedales a la rueda trasera, lo que proporcionaba una mayor
+                estabilidad y seguridad para el ciclista.<br><br>
+
+                A lo largo del siglo XX, se produjeron numerosos avances en la tecnología de las bicicletas, como frenos
+                más eficientes, cambios de marcha, cuadros de aluminio y fibra de carbono, y mejoras en los componentes.
+                La bicicleta se convirtió en un medio de transporte popular, tanto para el ocio como para desplazarse.<br><br>
+
+                En las últimas décadas, la bicicleta ha experimentado un resurgimiento significativo debido a la
+                conciencia creciente sobre la sostenibilidad, la salud y el transporte urbano. Se han desarrollado
+                nuevas tendencias, como las bicicletas eléctricas y las bicicletas de montaña, que han ampliado aún más
+                las opciones disponibles para los ciclistas.</p>
+            <p>¿Quieres saber mas sobre la modalidad de las bicicletas? <a href="bicicleta1.html">Sigue este enlace</a>.</p>
+           
+        </div>
+    </div>
+
+    <script src="portadaBicicleta.js"></script>
+    <script>
+        function mostrarModal(event) {
+            var modal = document.getElementById("myModal");
+            var closeButton = document.getElementsByClassName("close-button")[0];
+            if (event.target === modal || event.target === closeButton) {
+                modal.style.display = "none";
+            } else {
+                modal.style.display = "block";
+            }
+        }
+
+        function cerrarModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+
+
+</html>

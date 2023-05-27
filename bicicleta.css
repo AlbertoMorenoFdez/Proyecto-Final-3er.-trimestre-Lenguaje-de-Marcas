@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    font-size: 1rem;
+    --colorNormal: black;
+}
+
+.contenedor-botonera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.contenedor-botonera-bicicleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.boton {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f5c44a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton a {
+    color: #4e0117;
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+    /* background-color: #4e0117; */
+    height: 60px;
+
+}
+
+#banner a {
+    flex: 1;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border-right: 2px solid #f5c44a;
+}
+
+#banner a:last-child {
+    border-right: none;
+    /* Elimina la línea de separación en el último enlace */
+}
+
+.cuadrado {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto;
+    overflow: hidden;
+}
+
+.cuadrado p {
+    position: absolute;
+    color: var(--colorNormal);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cuadrado p {
+    display: block;
+    color: var(--colorNormal);
+    text-align: justify;
+
+}
+
+.cuadrado .imagenMTB {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://c4m2x9k8.stackpathcdn.com/download/bancorecursos/articulos2019/dx653_detalle1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.cuadrado .imagenMTB:hover {
+    opacity: 0.1;
+    transition: 1s;
+    
+}
+
+.cuadrado .imagenROAD {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://assets.specialized.com/i/specialized/sworks-bikes_categoryhero_1440x450);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuadrado .imagenROAD:hover {
+    opacity: 0.1;
+    transition: 1s;
+}
+
+
+.cuadrado .imagenEBIKE {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.emtb-news.de/news/wp-content/uploads/2023/03/focus-sam-2023-titelbild.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuadrado .imagenEBIKE:hover {
+    opacity: 0.1;
+    transition: 1s;
+}
+
+
+.cuadrado .imagenURBAN {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://es.brompton.com/-/media/sections/my22/ux-project/bikes-lp/bikes-header-1551x702.ashx?h=702&w=1551&la=es-ES&hash=D0DEEB806B9339C805DCA2CF37DB4F52);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuadrado .imagenURBAN:hover {
+    opacity: 0.1;
+    transition: 1s;
+}
+
+:root {
+    /* --colorNormal: #f5c44a; */
+    --colorNormal: "black";
+    font-size: 1rem;
+}
+
+p,
+h1,
+h2,
+h3 {
+    color: var(--colorNormal);
+}
+
+
+#ajustes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: #f5c44a;
+}
+
+.botonAjuste {
+    color: #f5c44a;
+}
+
+#mensaje {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#zonaModo {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.botonesModo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#dia,
+#noche {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+
+#dia {
+    display: none;
+}
+
+
+#mode-symbol {
+    font-size: 24px;
+}
+
+/* Parte del CSS para la portada */
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    background-image: url("bicicleta portada.jpg");
+    background-size: cover;
+
+
+}
+
+.ml3 {
+    font-weight: 700;
+    font-size: 10em;
+    font-family: 'Lobster', cursive;
+    color: #f5c44a;
+}
+
+.m14 {
+    font-family: 'Lobster', cursive;
+    color: #f5c44a;
+}
+
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #f5c44a;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content a {
+    color: black;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Parte del CSS para el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-image: url("bicicleta portada.jpg");
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+
+    color: #f5c44a;
+}
+
+#zonaModo {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.colores {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 500 px;
+}
+
+.tamañoFuente {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: #f5c44a;
+    min-width: 500px;
+}
+
+#esteParrafo {
+    margin-right: 10px;
+    flex: 1;
+}
+
+#esteParrafo2 {
+    width: 450px;
+    flex: 1;
+}
+
+h1 {
+    color: #f5c44a;
+    font-size: 2em;
+}
+
+#nombreUsuario {
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    top: 2px;
+    right: 5px;
+
+}
